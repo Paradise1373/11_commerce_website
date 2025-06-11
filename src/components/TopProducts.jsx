@@ -50,7 +50,11 @@ const TopProducts = () => {
         {/* Body Section */}
         <div className='grid grid-cols-1 gap-20 m-4 sm:grid-cols-2 md:grid-cols-3 md:gap-5 place-items-center'>
           {ProductData.map((data) => (
-            <div className='relative bg-white shadow-xl rounded-2xl dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white max-w-[300px] group duration-300'>
+            <div
+              data-aos='zoom-in'
+              key={data.id}
+              className='relative bg-white shadow-xl rounded-2xl dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white max-w-[300px] group duration-300'
+            >
               {/* Image Section */}
               <div className='h-[200px]'>
                 <img

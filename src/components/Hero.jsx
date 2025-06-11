@@ -43,7 +43,7 @@ const Hero = () => {
     pauseOnHover: false,
     pauseOnFocus: true,
   }
-  
+
   return (
     <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-300'>
       {/* Background Pattern */}
@@ -56,13 +56,27 @@ const Hero = () => {
               <div className='grid grid-cols-1 sm:grid-cols-2'>
                 {/* Text Content Section */}
                 <div className='relative z-10 flex flex-col justify-center order-2 gap-4 pt-12 text-center sm:text-left sm::order-1 sm:pt-0'>
-                  <h1 className='text-4xl font-bold md:text-5xl lg:text-6xl'>
+                  <h1
+                    data-aos='zoom-out'
+                    data-aos-duration='500'
+                    data-aos-once='true'
+                    className='text-4xl font-bold sm:text-5xl lg:text-6xl'
+                  >
                     {data.title}
                   </h1>
-                  <p className='text-sm'>
+                  <p
+                    data-aos='fade-up'
+                    data-aos-duration='500'
+                    data-aos-delay='100'
+                    className='text-sm'
+                  >
                     {data.description}
                   </p>
-                  <div>
+                  <div
+                    data-aos='fade-up'
+                    data-aos-duration='500'
+                    data-aos-delay='300'
+                  >
                     <button className='px-4 py-2 text-white duration-300 rounded-full bg-gradient-to-r from-primary to-secondary hover:scale-105'>
                       Order Now
                     </button>
@@ -70,7 +84,11 @@ const Hero = () => {
                 </div>
                 {/* Image Section */}
                 <div className='order-1 sm:order-2'>
-                  <div className='relative z-10'>
+                  <div
+                    data-aos='zoom-in'
+                    data-aos-once='true'
+                    className='relative z-10'
+                  >
                     <img
                       src={data.Image}
                       alt=''
