@@ -9,6 +9,7 @@ import Hero from './components/Hero'
 import Products from './components/Products'
 import TopProducts from './components/TopProducts'
 import Banner from './components/Banner'
+import Subscribe from './components/Subscribe'
 
 const App = () => {
   useEffect(() => {
@@ -28,6 +29,8 @@ const App = () => {
       <Products />
       <TopProducts />
       <Banner />
+      <Subscribe />
+      <Products />
     </div>
   )
 }

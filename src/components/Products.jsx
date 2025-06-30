@@ -52,7 +52,7 @@ const ProductsData = [
 
 const Products = () => {
   return (
-    <div className='mb-12 mt-14'>
+    <div className='mb-14 mt-14'>
       <div className='container'>
         {/* Header Section */}
         <div className='text-center max-w-[600px] mx-auto mb-10'>
@@ -92,6 +92,15 @@ const Products = () => {
                 </div>
               </div>
             ))}
+          </div>
+          {/* view all button */}
+          <div className='flex justify-center'>
+            <button
+              data-aos='zoom-in'
+              className='px-5 py-1 mt-10 text-center text-white rounded-md cursor-pointer bg-primary'
+            >
+              View All Button
+            </button>
           </div>
         </div>
       </div>
