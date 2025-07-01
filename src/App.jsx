@@ -10,6 +10,7 @@ import TopProducts from './components/TopProducts'
 import Banner from './components/Banner'
 import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
+import Footer from './components/Footer'
 
 const App = () => {
   useEffect(() => {
@@ -23,7 +24,7 @@ const App = () => {
   }, [])
 
   return (
-    <div>
+    <div className='duration-200 bg-white dark:bg-gray-900 dark:text-white'>
       <Navbar />
       <Hero />
       <Products />
@@ -32,6 +33,7 @@ const App = () => {
       <Subscribe />
       <Products />
       <Testimonials />
+      <Footer />
     </div>
   )
 }
