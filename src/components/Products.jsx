@@ -50,7 +50,7 @@ const ProductsData = [
   },
 ]
 
-const Products = () => {
+const Products = ({ handleOrderPopup }) => {
   return (
     <div className='mb-14 mt-14'>
       <div className='container'>
@@ -97,6 +97,7 @@ const Products = () => {
           <div className='flex justify-center'>
             <button
               data-aos='zoom-in'
+              onClick={() => handleOrderPopup()}
               className='px-5 py-1 mt-10 text-center text-white rounded-md cursor-pointer bg-primary'
             >
               View All Button

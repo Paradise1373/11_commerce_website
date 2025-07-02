@@ -52,7 +52,7 @@ const DropdownLinks = [
   },
 ]
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className='relative z-40 duration-200 bg-white shadow-lg dark:bg-gray-900 dark:text-white'>
       {/* Upper Navbar */}
@@ -76,7 +76,7 @@ const Navbar = () => {
             </div>
             {/* Order Button */}
             <button
-              onClick={() => alert('nothing yet')}
+              onClick={() => handleOrderPopup()}
               className='flex items-center gap-3 px-4 py-1 text-white transition-all duration-200 rounded-full group bg-gradient-to-r from-primary to-secondary'
             >
               <span className='hidden transition-all duration-200 group-hover:block'>
@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* Lower Navbar */}
-      <div className='flex justify-center '>
+      <div data-aos='zoom-in' className='flex justify-center '>
         <ul className='items-center hidden gap-4 md:flex'>
           {Menu.map((item) => (
             <li
